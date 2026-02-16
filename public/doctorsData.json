@@ -3,135 +3,159 @@
   "doctors": [
     {
       "id": 1,
-      "image": "https://i.pravatar.cc/400?img=12",
+      "image": "https://i.ibb.co.com/rfHBHzgr/Untitled-design-male1.png",
       "name": "Dr. Ahmed Rahman",
       "education": "MBBS, FCPS (Cardiology)",
       "specialities": "Cardiology",
       "designation": "Senior Consultant",
       "workplace": "Dhaka Medical College Hospital",
       "fee": 1200,
-      "availability": "Sunday, Monday, Wednesday"
+      "availability": "Sunday, Monday, Wednesday",
+      "experience": 15,
+      "registryNumber": "BD1001"
     },
     {
       "id": 2,
-      "image": "https://i.pravatar.cc/400?img=32",
+      "image": "https://i.ibb.co.com/y2bHKw7/Untitled-design-female-2.png",
       "name": "Dr. Nusrat Jahan",
       "education": "MBBS, MD (Gynecology)",
       "specialities": "Gynecology & Obstetrics",
       "designation": "Consultant",
       "workplace": "Square Hospital, Dhaka",
       "fee": 1500,
-      "availability": "Saturday, Tuesday, Thursday"
+      "availability": "Saturday, Tuesday, Thursday",
+      "experience": 12,
+      "registryNumber": "BD1002"
     },
     {
       "id": 3,
-      "image": "https://i.pravatar.cc/400?img=15",
+      "image": "https://i.ibb.co.com/Df4rzRSq/Untitled-design-male-3.png",
       "name": "Dr. Tanvir Hasan",
       "education": "MBBS, MS (Orthopedics)",
       "specialities": "Orthopedics",
       "designation": "Associate Professor",
       "workplace": "BSMMU",
       "fee": 1300,
-      "availability": "Sunday, Tuesday, Thursday"
+      "availability": "Sunday, Tuesday, Thursday",
+      "experience": 10,
+      "registryNumber": "BD1003"
     },
     {
       "id": 4,
-      "image": "https://i.pravatar.cc/400?img=45",
+      "image": "https://i.ibb.co.com/v6xK462b/Untitled-design-female-4.png",
       "name": "Dr. Farhana Islam",
       "education": "MBBS, FCPS (Dermatology)",
       "specialities": "Dermatology",
       "designation": "Senior Consultant",
       "workplace": "United Hospital, Dhaka",
       "fee": 1400,
-      "availability": "Monday, Wednesday, Friday"
+      "availability": "Monday, Wednesday, Friday",
+      "experience": 14,
+      "registryNumber": "BD1004"
     },
     {
       "id": 5,
-      "image": "https://i.pravatar.cc/400?img=22",
+      "image": "https://i.ibb.co.com/wrwnKfw7/Untitled-design-male-5.png",
       "name": "Dr. Saiful Karim",
       "education": "MBBS, MD (Neurology)",
       "specialities": "Neurology",
       "designation": "Consultant",
       "workplace": "National Institute of Neurosciences",
       "fee": 1600,
-      "availability": "Sunday, Monday, Thursday"
+      "availability": "Sunday, Monday, Thursday",
+      "experience": 13,
+      "registryNumber": "BD1005"
     },
     {
       "id": 6,
-      "image": "https://i.pravatar.cc/400?img=47",
+      "image": "https://i.ibb.co.com/zht8t5df/Untitled-design-female-7.png",
       "name": "Dr. Rima Chowdhury",
       "education": "MBBS, FCPS (Pediatrics)",
       "specialities": "Pediatrics",
       "designation": "Assistant Professor",
       "workplace": "Apollo Hospital, Dhaka",
       "fee": 1000,
-      "availability": "Saturday, Monday, Wednesday"
+      "availability": "Saturday, Monday, Wednesday",
+      "experience": 8,
+      "registryNumber": "BD1006"
     },
     {
       "id": 7,
-      "image": "https://i.pravatar.cc/400?img=18",
+      "image": "https://i.ibb.co.com/1f13mWJ2/Untitled-design-male-8.png",
       "name": "Dr. Mahmud Hossain",
       "education": "MBBS, MS (ENT)",
       "specialities": "ENT",
       "designation": "Consultant",
       "workplace": "Ibn Sina Hospital",
       "fee": 900,
-      "availability": "Tuesday, Thursday, Friday"
+      "availability": "Tuesday, Thursday, Friday",
+      "experience": 11,
+      "registryNumber": "BD1007"
     },
     {
       "id": 8,
-      "image": "https://i.pravatar.cc/400?img=49",
+      "image": "https://i.ibb.co.com/d45c2hrv/Untitled-design-female-9.png",
       "name": "Dr. Sharmeen Akter",
       "education": "MBBS, FCPS (Medicine)",
       "specialities": "Internal Medicine",
       "designation": "Senior Consultant",
       "workplace": "Labaid Hospital",
       "fee": 1100,
-      "availability": "Sunday, Wednesday, Friday"
+      "availability": "Sunday, Wednesday, Friday",
+      "experience": 14,
+      "registryNumber": "BD1008"
     },
     {
       "id": 9,
-      "image": "https://i.pravatar.cc/400?img=25",
+      "image": "https://i.ibb.co.com/0pfF55xg/Untitled-design-male-10.png",
       "name": "Dr. Rakib Uddin",
       "education": "MBBS, MD (Psychiatry)",
       "specialities": "Psychiatry",
       "designation": "Consultant",
       "workplace": "Bangabandhu Sheikh Mujib Medical University",
       "fee": 1000,
-      "availability": "Monday, Tuesday, Thursday"
+      "availability": "Monday, Tuesday, Thursday",
+      "experience": 12,
+      "registryNumber": "BD1009"
     },
     {
       "id": 10,
-      "image": "https://i.pravatar.cc/400?img=52",
+      "image": "https://i.ibb.co.com/6c77wyPY/Untitled-design-female-11.png",
       "name": "Dr. Mahi Sultana",
       "education": "MBBS, FCPS (Ophthalmology)",
       "specialities": "Eye Specialist",
       "designation": "Consultant",
       "workplace": "Islamia Eye Hospital",
       "fee": 800,
-      "availability": "Saturday, Monday, Thursday"
+      "availability": "Saturday, Monday, Thursday",
+      "experience": 10,
+      "registryNumber": "BD1010"
     },
     {
       "id": 11,
-      "image": "https://i.pravatar.cc/400?img=29",
+      "image": "https://i.ibb.co.com/hxf4QnXf/Untitled-design-male-6.png",
       "name": "Dr. Imran Kabir",
       "education": "MBBS, MS (Urology)",
       "specialities": "Urology",
       "designation": "Associate Professor",
       "workplace": "Dhaka Medical College Hospital",
       "fee": 1500,
-      "availability": "Sunday, Tuesday, Friday"
+      "availability": "Sunday, Tuesday, Friday",
+      "experience": 11,
+      "registryNumber": "BD1011"
     },
     {
       "id": 12,
-      "image": "https://i.pravatar.cc/400?img=60",
+      "image": "https://i.ibb.co.com/4ZQwZ1x4/Untitled-design-12-female.png",
       "name": "Dr. Tania Rahman",
       "education": "MBBS, MD (Endocrinology)",
       "specialities": "Endocrinology",
       "designation": "Consultant",
       "workplace": "Square Hospital",
       "fee": 1300,
-      "availability": "Monday, Wednesday, Thursday"
+      "availability": "Monday, Wednesday, Thursday",
+      "experience": 9,
+      "registryNumber": "BD1012"
     }
   ]
 }
