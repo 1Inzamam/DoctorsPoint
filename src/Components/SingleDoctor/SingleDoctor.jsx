@@ -11,7 +11,7 @@ const isAvailable = doctor.availability.includes(today);
         <img className="w-[full] p-6 object-cover" src={image} alt="Shoes" />
       </figure>
       <div className="card-body">
-        <div className={`badge ${isAvailable ? "badge-success" : "badge-error"}`}>
+        <div className={`badge p-4 rounded-4xl ${isAvailable ? "bg-green-100 border-green-300 text-green-700" : "bg-red-100 border-red-300 text-red-700"}`}>
           {isAvailable ? "Available" : "Not Available"}
         </div>
         <h2 className="card-title">{name}</h2>
