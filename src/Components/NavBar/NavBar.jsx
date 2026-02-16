@@ -4,22 +4,22 @@ import { Link } from "react-router";
 const NavBar = () => {
   const links = (
     <>
-      <Link>
+      <Link to={"/"}>
         <li>
           <a>Home</a>
         </li>
       </Link>
-      <Link>
+      <Link to={"bookings"}>
         <li>
-          <a>My-Bookings</a>
+          <a>Bookings</a>
         </li>
       </Link>
-      <Link>
+      <Link to={"blogs"}>
         <li>
           <a>Blogs</a>
         </li>
       </Link>
-      <Link>
+      <Link to={"contacts"}>
         <li>
           <a>Contact Us</a>
         </li>
@@ -27,7 +27,7 @@ const NavBar = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+    <div className="navbar bg-base-100 shadow-sm max-w-7xl mx-auto">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

@@ -4,6 +4,9 @@ import Root from "../Root/Root";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import { Component } from "react";
 import Home from "../Pages/Home/Home";
+import Bookings from "../Pages/Bookings/Bookings";
+import Blogs from "../Pages/Blogs/Blogs";
+import Contacts from "../Pages/Contacts/Contacts";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -14,7 +17,19 @@ export const router = createBrowserRouter([
         path: "/",
         Component: Home,
         }
-        
+        ,
+        {
+            path:"bookings",
+            Component: Bookings,
+        },
+        {
+            path:"blogs",
+            Component: Blogs,
+        }
+        ,{
+            path:"contacts",
+            Component: Contacts,
+        }
     ]
   },
 ]);

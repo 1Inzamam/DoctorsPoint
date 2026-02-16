@@ -5,7 +5,7 @@ import { Outlet } from "react-router";
 
 const Root = () => {
   return (
-    <div>
+    <div className="min-h-screen  flex flex-col justify-between">
       <NavBar></NavBar>
       <Outlet></Outlet>
       <Footer></Footer>
