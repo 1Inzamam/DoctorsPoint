@@ -1,11 +1,10 @@
 import { createBrowserRouter } from "react-router";
-import Root from "../Root/Root";
-import ErrorPage from "../Pages/ErrorPage/ErrorPage";
-import { Component } from "react";
-import Home from "../Pages/Home/Home";
-import Bookings from "../Pages/Bookings/Bookings";
 import Blogs from "../Pages/Blogs/Blogs";
+import Bookings from "../Pages/Bookings/Bookings";
 import Contacts from "../Pages/Contacts/Contacts";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import Home from "../Pages/Home/Home";
+import Root from "../Root/Root";
 export const router = createBrowserRouter([
   {
     path: "/",

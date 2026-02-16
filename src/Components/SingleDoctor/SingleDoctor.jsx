@@ -1,15 +1,19 @@
 import React from "react";
 import { PiTrademarkRegisteredFill } from "react-icons/pi";
 const SingleDoctor = ({ doctor }) => {
-  const { id, name, specialty, image, education, experience, registryNumber } =
+  const today = new Date().toLocaleString("en-US",{weekday:"long"})
+  const { id, name, specialty, image, education, experience, registryNumber,availability } =
     doctor;
-
+const isAvailable = doctor.availability.includes(today);
   return (
     <div className="card w-64- bg-base-100">
       <figure>
         <img className="w-[full] p-6 object-cover" src={image} alt="Shoes" />
       </figure>
       <div className="card-body">
+        <div className={`badge ${isAvailable ? "badge-success" : "badge-error"}`}>
+          {isAvailable ? "Available" : "Not Available"}
+        </div>
         <h2 className="card-title">{name}</h2>
         <p>{education}</p>
         <div className="border-t-2 border-dashed"></div>
