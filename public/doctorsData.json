@@ -20,7 +20,8 @@
       "fee": 1200,
       "availability": "Sunday, Monday, Wednesday",
       "experience": 15,
-      "registryNumber": "BD1001"
+      "registryNumber": "BD1001",
+      "description": "Dr. Ahmed Rahman is a Senior Consultant Cardiologist with 15 years of experience, specializing in heart diseases and patient care."
     },
     {
       "id": 2,
@@ -33,7 +34,8 @@
       "fee": 1500,
       "availability": "Saturday, Tuesday, Thursday",
       "experience": 12,
-      "registryNumber": "BD1002"
+      "registryNumber": "BD1002",
+      "description": "Dr. Nusrat Jahan is an experienced Consultant in Gynecology and Obstetrics, providing comprehensive women's health care."
     },
     {
       "id": 3,
@@ -46,7 +48,8 @@
       "fee": 1300,
       "availability": "Sunday, Tuesday, Thursday",
       "experience": 10,
-      "registryNumber": "BD1003"
+      "registryNumber": "BD1003",
+      "description": "Dr. Tanvir Hasan is an Associate Professor and Orthopedic specialist with 10 years of expertise in bone and joint care."
     },
     {
       "id": 4,
@@ -59,7 +62,8 @@
       "fee": 1400,
       "availability": "Monday, Wednesday, Friday",
       "experience": 14,
-      "registryNumber": "BD1004"
+      "registryNumber": "BD1004",
+      "description": "Dr. Farhana Islam is a Senior Consultant Dermatologist with extensive experience in treating skin disorders and cosmetic dermatology."
     },
     {
       "id": 5,
@@ -72,7 +76,8 @@
       "fee": 1600,
       "availability": "Sunday, Monday, Thursday",
       "experience": 13,
-      "registryNumber": "BD1005"
+      "registryNumber": "BD1005",
+      "description": "Dr. Saiful Karim is a Neurology Consultant with 13 years of experience, specializing in brain and nervous system disorders."
     },
     {
       "id": 6,
@@ -85,7 +90,8 @@
       "fee": 1000,
       "availability": "Saturday, Monday, Wednesday",
       "experience": 8,
-      "registryNumber": "BD1006"
+      "registryNumber": "BD1006",
+      "description": "Dr. Rima Chowdhury is an Assistant Professor and Pediatrician focused on child health and preventive care with 8 years of experience."
     },
     {
       "id": 7,
@@ -98,7 +104,8 @@
       "fee": 900,
       "availability": "Tuesday, Thursday, Friday",
       "experience": 11,
-      "registryNumber": "BD1007"
+      "registryNumber": "BD1007",
+      "description": "Dr. Mahmud Hossain is an ENT Consultant with 11 years of experience, specializing in ear, nose, and throat conditions."
     },
     {
       "id": 8,
@@ -111,7 +118,8 @@
       "fee": 1100,
       "availability": "Sunday, Wednesday, Friday",
       "experience": 14,
-      "registryNumber": "BD1008"
+      "registryNumber": "BD1008",
+      "description": "Dr. Sharmeen Akter is a Senior Consultant in Internal Medicine with 14 years of experience managing complex adult diseases."
     },
     {
       "id": 9,
@@ -124,7 +132,8 @@
       "fee": 1000,
       "availability": "Monday, Tuesday, Thursday",
       "experience": 12,
-      "registryNumber": "BD1009"
+      "registryNumber": "BD1009",
+      "description": "Dr. Rakib Uddin is a Psychiatry Consultant with 12 years of experience, providing mental health care and therapy."
     },
     {
       "id": 10,
@@ -137,7 +146,8 @@
       "fee": 800,
       "availability": "Saturday, Monday, Thursday",
       "experience": 10,
-      "registryNumber": "BD1010"
+      "registryNumber": "BD1010",
+      "description": "Dr. Mahi Sultana is an Ophthalmologist specializing in eye care and vision correction with 10 years of experience."
     },
     {
       "id": 11,
@@ -150,7 +160,8 @@
       "fee": 1500,
       "availability": "Sunday, Tuesday, Friday",
       "experience": 11,
-      "registryNumber": "BD1011"
+      "registryNumber": "BD1011",
+      "description": "Dr. Imran Kabir is an Associate Professor and Urology Consultant with 11 years of experience treating urinary tract disorders."
     },
     {
       "id": 12,
@@ -163,7 +174,8 @@
       "fee": 1300,
       "availability": "Monday, Wednesday, Thursday",
       "experience": 9,
-      "registryNumber": "BD1012"
+      "registryNumber": "BD1012",
+      "description": "Dr. Tania Rahman is an Endocrinology Consultant with 9 years of experience managing hormonal and metabolic disorders."
     }
   ]
 }

@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 
 const NavBar = ({ allDoctors }) => {
-  const logo = allDoctors.mainLogo;
+  const logo = allDoctors ? allDoctors.mainLogo : "https://i.ibb.co.com/wNtxmtxd/medical.png";
 
   const links = (
     <>
