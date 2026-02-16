@@ -1,5 +1,13 @@
 {
   "mainLogo": "https://i.ibb.co.com/wNtxmtxd/medical.png",
+  "bannerImage": [
+    {
+      "image": "https://i.ibb.co.com/9kgc5cQS/Chat-GPT-Image-Feb-16-2026-10-31-20-PM.png"
+    },
+    {
+      "image": "https://i.ibb.co.com/Y4NnwKyG/Chat-GPT-Image-Feb-16-2026-10-32-51-PM.png"
+    }
+  ],
   "doctors": [
     {
       "id": 1,

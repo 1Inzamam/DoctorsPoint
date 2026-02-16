@@ -4,7 +4,7 @@ import { Link } from "react-router";
 const Footer = () => {
   const links = (
     <>
-     <li>
+      <li>
         <Link to={"/"}>Home</Link>
       </li>
       <li>

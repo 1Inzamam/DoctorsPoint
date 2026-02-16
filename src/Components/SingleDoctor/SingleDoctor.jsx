@@ -10,17 +10,16 @@ const SingleDoctor = ({ doctor }) => {
         <img className="w-[full] p-6 object-cover" src={image} alt="Shoes" />
       </figure>
       <div className="card-body">
-        
         <h2 className="card-title">{name}</h2>
         <p>{education}</p>
-        <div className="border-t-2 border-dashed">
-
-        </div>
+        <div className="border-t-2 border-dashed"></div>
         <div className="flex items-center gap-3">
-            <PiTrademarkRegisteredFill /> {registryNumber}
+          <PiTrademarkRegisteredFill /> {registryNumber}
         </div>
         <div className="text-green-600">
-          <button className="btn w-full rounded-4xl border-green-600 text-green-600">View Details</button>
+          <button className="btn w-full rounded-4xl border-green-600 text-green-600">
+            View Details
+          </button>
         </div>
       </div>
     </div>
