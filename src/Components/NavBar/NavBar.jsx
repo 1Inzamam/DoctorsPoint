@@ -1,29 +1,22 @@
-import React from "react";
 import { Link } from "react-router";
 
-const NavBar = () => {
+const NavBar = ({ allDoctors }) => {
+  const logo = allDoctors.mainLogo;
+
   const links = (
     <>
-      <Link to={"/"}>
-        <li>
-          <a>Home</a>
-        </li>
-      </Link>
-      <Link to={"bookings"}>
-        <li>
-          <a>Bookings</a>
-        </li>
-      </Link>
-      <Link to={"blogs"}>
-        <li>
-          <a>Blogs</a>
-        </li>
-      </Link>
-      <Link to={"contacts"}>
-        <li>
-          <a>Contact Us</a>
-        </li>
-      </Link>
+      <li>
+        <Link to={"/"}>Home</Link>
+      </li>
+      <li>
+        <Link to={"bookings"}>Bookings</Link>
+      </li>
+      <li>
+        <Link to={"blogs"}>Blogs</Link>
+      </li>
+      <li>
+        <Link to={"contacts"}>Contact Us</Link>
+      </li>
     </>
   );
   return (
@@ -54,13 +47,15 @@ const NavBar = () => {
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <a className="btn btn-ghost text-xl">
+          <img src={logo} alt="" />
+        </a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+        <a className="btn">Emergency</a>
       </div>
     </div>
   );

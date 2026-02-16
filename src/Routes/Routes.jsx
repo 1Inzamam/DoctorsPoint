@@ -1,4 +1,3 @@
-
 import { createBrowserRouter } from "react-router";
 import Root from "../Root/Root";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
@@ -10,26 +9,34 @@ import Contacts from "../Pages/Contacts/Contacts";
 export const router = createBrowserRouter([
   {
     path: "/",
+    loader: async () => {
+      const res = await fetch("doctorsData.json");
+      return res.json();
+    },
     Component: Root,
     errorElement: <ErrorPage></ErrorPage>,
-    children:[{
+    children: [
+      {
         index: true,
         path: "/",
-        Component: Home,
-        }
-        ,
-        {
-            path:"bookings",
-            Component: Bookings,
+        loader: async () => {
+          const res = await fetch("doctorsData.json");
+          return res.json();
         },
-        {
-            path:"blogs",
-            Component: Blogs,
-        }
-        ,{
-            path:"contacts",
-            Component: Contacts,
-        }
-    ]
+        Component: Home,
+      },
+      {
+        path: "bookings",
+        Component: Bookings,
+      },
+      {
+        path: "blogs",
+        Component: Blogs,
+      },
+      {
+        path: "contacts",
+        Component: Contacts,
+      },
+    ],
   },
 ]);
