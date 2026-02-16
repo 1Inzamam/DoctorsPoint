@@ -20,7 +20,7 @@ const NavBar = ({ allDoctors }) => {
     </>
   );
   return (
-    <div className="navbar bg-base-100 shadow-sm max-w-7xl mx-auto">
+    <div className="navbar max-w-7xl p-6 mx-auto">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -42,7 +42,7 @@ const NavBar = ({ allDoctors }) => {
           </div>
           <ul
             tabIndex="-1"
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content rounded-box z-1 mt-3 w-52 p-2"
           >
             {links}
           </ul>
@@ -55,7 +55,7 @@ const NavBar = ({ allDoctors }) => {
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Emergency</a>
+        <a className="btn bg-green-600 text-white rounded-4xl">Emergency</a>
       </div>
     </div>
   );

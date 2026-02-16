@@ -1,29 +1,30 @@
-import React from 'react'
+import React from "react";
+import { PiTrademarkRegisteredFill } from "react-icons/pi";
+const SingleDoctor = ({ doctor }) => {
+  const { id, name, specialty, image, education, experience, registryNumber } =
+    doctor;
 
-const SingleDoctor = ({doctor}) => {
-    const {id, name, specialty, image, education, experience} = doctor;
-    
   return (
-    <div className="card bg-base-100 w-full shadow-sm">
-  <figure>
-    <img
-      src={image}
-      alt="Shoes" />
-  </figure>
-  <div className="card-body">
-    <h2 className="card-title">
-      {name}
-     
-    </h2>
-    <p>{education}</p>
-    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-    <div className="card-actions justify-end">
-      <div className="badge badge-outline">Fashion</div>
-      <div className="badge badge-outline">Products</div>
-    </div>
-  </div>
-</div>
-  )
-}
+    <div className="card w-64- bg-base-100">
+      <figure>
+        <img className="w-[full] p-6 object-cover" src={image} alt="Shoes" />
+      </figure>
+      <div className="card-body">
+        
+        <h2 className="card-title">{name}</h2>
+        <p>{education}</p>
+        <div className="border-t-2 border-dashed">
 
-export default SingleDoctor
+        </div>
+        <div className="flex items-center gap-3">
+            <PiTrademarkRegisteredFill /> {registryNumber}
+        </div>
+        <div className="text-green-600">
+          <button className="btn w-full rounded-4xl border-green-600 text-green-600">View Details</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default SingleDoctor;
