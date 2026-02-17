@@ -1,15 +1,14 @@
-import React from "react";
-import SingleDoctor from "../../Components/SingleDoctor/SingleDoctor";
-import { useLoaderData, useParams } from "react-router";
 import { PiTrademarkRegisteredFill } from "react-icons/pi";
+import { Link, useLoaderData, useParams } from "react-router";
+import { toast } from "react-toastify";
+import { addAppointment } from "../../Utility/addAppointment";
 const DoctorDetails = () => {
   const { id } = useParams();
   const convertedId = parseInt(id);
   const data = useLoaderData();
   const idData = data.doctors.find((doctor) => doctor.id === convertedId);
   const today = new Date().toLocaleString("en-US", { weekday: "long" });
-  
- 
+
   if (!idData) {
     return <p>Loading...</p>;
   }
@@ -24,6 +23,10 @@ const DoctorDetails = () => {
     registryNumber,
   } = idData;
   const isAvailable = availability.includes(today);
+
+  const handleAppointment = (appointmentId) => {
+    addAppointment(appointmentId);
+  };
 
   return (
     <div className="flex flex-col max-w-7xl mx-auto gap-6 ">
@@ -87,13 +90,22 @@ const DoctorDetails = () => {
           <div className="w-full border-t-2   border-dashed border-gray-200"></div>
           <div className="flex justify-between">
             <h1>Availability</h1>
-            <div className={`badge ${isAvailable ? "bg-green-100 text-green-700 border-green-300" : "bg-red-100 text-red-700 border-red-300"}`}>
+            <div
+              className={`badge ${isAvailable ? "bg-green-100 text-green-700 border-green-300" : "bg-red-100 text-red-700 border-red-300"}`}
+            >
               {isAvailable ? "Available" : "Unavailable"}
             </div>
           </div>
           <div className="border-t-2 border-gray-200"></div>
         </div>
-        <button className="btn w-full rounded-4xl bg-green-500 text-white">Take Appointment</button>
+        <Link to="/bookings">
+          <button
+            onClick={() => handleAppointment(id)}
+            className="btn w-full rounded-4xl bg-green-500 text-white"
+          >
+            Take Appointment
+          </button>
+        </Link>
       </div>
     </div>
   );

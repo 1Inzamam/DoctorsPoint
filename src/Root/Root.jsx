@@ -1,7 +1,7 @@
-import React from "react";
-import NavBar from "../Components/NavBar/NavBar";
-import Footer from "../Components/Footer/Footer";
 import { Outlet, useLoaderData } from "react-router";
+import { ToastContainer } from "react-toastify";
+import Footer from "../Components/Footer/Footer";
+import NavBar from "../Components/NavBar/NavBar";
 
 const Root = () => {
   const allDoctors = useLoaderData();
@@ -10,6 +10,7 @@ const Root = () => {
       <NavBar allDoctors={allDoctors}></NavBar>
       <Outlet></Outlet>
       <Footer></Footer>
+      <ToastContainer />
     </div>
   );
 };
