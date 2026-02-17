@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useLoaderData } from "react-router";
+import { Link, useLoaderData } from "react-router";
 import { getStoredAppointments } from "../../Utility/addAppointment";
 import BookedAppointment from "../../Components/BookedAppointment/BookedAppointment";
 
@@ -20,17 +20,20 @@ const Bookings = () => {
   return (
     <div className="min-h-screen flex flex-col max-w-7xl mx-auto my-12">
       <div>
+        
+
         {appoint.length === 0 ? (
-          <div>
+          <div className="flex flex-col items-center space-y-3">
             <h1 className="text-center text-2xl font-bold text-red-500">
               Booked Appointments not Available
             </h1>
             <p className="text-center mt-6 text-gray-500">
               No appointments booked yet.
             </p>
+            <Link to={"/"}><button className="btn bg-green-500 text-white rounded-4xl hover:bg-green-700 ">Back To Home</button></Link>
           </div>
         ) : (
-          <div>
+          <div className="max-w-7xl mx-auto  p-6 rounded-3xl space-y-6">
             <div className="text-center lg:w-252.25">
               <h1>Booked Appointments</h1>
               <h3>
@@ -40,7 +43,7 @@ const Bookings = () => {
                 easily and ensure you never miss a consultation.
               </h3>
             </div>
-            <div>
+            <div className="space-y-6">
               {appoint.map((data) => (
                 <BookedAppointment key={data.id} data={data}></BookedAppointment>
               ))}
