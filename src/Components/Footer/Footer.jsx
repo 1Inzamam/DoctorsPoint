@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router-dom";
 
 const Footer = ({ allDoctors }) => {
   const { mainLogo } = allDoctors;
@@ -6,29 +6,65 @@ const Footer = ({ allDoctors }) => {
   const links = (
     <>
       <li>
-        <Link to={"/"}>Home</Link>
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? "text-green-500 font-bold hover:bg-transparent focus:outline-none focus:bg-transparent active:bg-transparent"
+              : "text-black hover:bg-transparent focus:outline-none focus:bg-transparent active:bg-transparent"
+          }
+          to={"/"}
+        >
+          Home
+        </NavLink>
       </li>
       <li>
-        <Link to={"bookings"}>Bookings</Link>
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? "text-green-500 font-bold hover:bg-transparent focus:outline-none focus:bg-transparent active:bg-transparent"
+              : "text-black hover:bg-transparent focus:outline-none focus:bg-transparent active:bg-transparent"
+          }
+          to={"bookings"}
+        >
+          Bookings
+        </NavLink>
       </li>
       <li>
-        <Link to={"blogs"}>Blogs</Link>
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? "text-green-500 font-bold hover:bg-transparent focus:outline-none focus:bg-transparent active:bg-transparent"
+              : "text-black hover:bg-transparent focus:outline-none focus:bg-transparent active:bg-transparent"
+          }
+          to={"blogs"}
+        >
+          Blogs
+        </NavLink>
       </li>
       <li>
-        <Link to={"contacts"}>Contact Us</Link>
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? "text-green-500 font-bold hover:bg-transparent focus:outline-none focus:bg-transparent active:bg-transparent"
+              : "text-black hover:bg-transparent focus:outline-none focus:bg-transparent active:bg-transparent"
+          }
+          to={"contacts"}
+        >
+          Contact Us
+        </NavLink>
       </li>
     </>
   );
   return (
     <footer className="footer footer-horizontal footer-center bg-white rounded p-10">
       <div className="flex items-center text-3xl font-extrabold">
-        <img className="w-12" src={mainLogo} alt="" />
+        <img className="w-8 md:w-12" src={mainLogo} alt="" />
         <h1>Doctors Point</h1>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal text-[18px] space-x-[48px] font-medium px-1">{links}</ul>
+        <ul className="menu menu-horizontal text-[18px] space-x-12 font-medium px-1">{links}</ul>
       </div>
-<div className="border-t-2 border-gray-200 w-1/2"></div>
+<div className="border-t-2 border-gray-200 w-[80%] md:w-1/2"></div>
       <aside className="flex items-center gap-4 text-2xl">
         <a
           href="https://www.linkedin.com/in/md-inzamam-ul-khan-77068520b/"

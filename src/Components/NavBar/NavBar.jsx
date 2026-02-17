@@ -90,7 +90,7 @@ const NavBar = ({ allDoctors }) => {
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">{links}</ul>
+        <ul className="menu menu-horizontal text-[18px] space-x-12 font-medium  px-1">{links}</ul>
       </div>
       <div className="navbar-end">
         <a className="btn bg-green-600 text-white rounded-4xl">Emergency</a>
