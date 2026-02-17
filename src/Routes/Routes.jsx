@@ -32,6 +32,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "bookings",
+        loader:fetchDoctorsData,
         Component: Bookings,
       },
       {

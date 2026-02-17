@@ -1,6 +1,5 @@
 import { PiTrademarkRegisteredFill } from "react-icons/pi";
 import { Link, useLoaderData, useParams } from "react-router";
-import { toast } from "react-toastify";
 import { addAppointment } from "../../Utility/addAppointment";
 const DoctorDetails = () => {
   const { id } = useParams();
