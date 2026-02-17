@@ -10,7 +10,7 @@ const BookedAppointment = ({ data, onCancel }) => {
             {education}, {specialities}
           </h3>
         </div>
-        <div>{fee}</div>
+        <div>Appointment Fee: {fee} Taka (without VAT)</div>
       </div>
       <div className="border-t-2 border-dashed border-gray-200"></div>
       <button
