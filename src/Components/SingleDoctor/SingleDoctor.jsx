@@ -12,7 +12,7 @@ const SingleDoctor = ({ doctor }) => {
     registryNumber,
     availability,
   } = doctor;
-  const isAvailable = availability.includes(today);
+   const isAvailable = availability.includes(today);
   return (
     <div className="card w-64- bg-base-100">
       <figure>

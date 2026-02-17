@@ -7,7 +7,9 @@ const DoctorDetails = () => {
   const convertedId = parseInt(id);
   const data = useLoaderData();
   const idData = data.doctors.find((doctor) => doctor.id === convertedId);
-
+  const today = new Date().toLocaleString("en-US", { weekday: "long" });
+  
+ 
   if (!idData) {
     return <p>Loading...</p>;
   }
@@ -21,6 +23,7 @@ const DoctorDetails = () => {
     workplace,
     registryNumber,
   } = idData;
+  const isAvailable = availability.includes(today);
 
   return (
     <div className="flex flex-col max-w-7xl mx-auto gap-6 ">
@@ -78,17 +81,19 @@ const DoctorDetails = () => {
           </div>
         </div>
       </div>
-      <div className="text-center mt-4 mb-4 rounded-3xl bg-white w-full p-6">
+      <div className="text-center mt-4 mb-4 rounded-3xl bg-white w-full p-6 space-y-3">
         <div>Appointment</div>
         <div className="space-y-4">
           <div className="w-full border-t-2   border-dashed border-gray-200"></div>
           <div className="flex justify-between">
             <h1>Availability</h1>
-            <div className="badge">available</div>
+            <div className={`badge ${isAvailable ? "bg-green-100 text-green-700 border-green-300" : "bg-red-100 text-red-700 border-red-300"}`}>
+              {isAvailable ? "Available" : "Unavailable"}
+            </div>
           </div>
           <div className="border-t-2 border-gray-200"></div>
         </div>
-        <button className="btn ">Take Appointment</button>
+        <button className="btn w-full rounded-4xl bg-green-500 text-white">Take Appointment</button>
       </div>
     </div>
   );
