@@ -24,12 +24,12 @@ const DoctorDetails = () => {
 
   return (
     <div className="flex flex-col items-center max-w-7xl mx-auto gap-6">
-      <div className="space-y-3 md:w-3xl lg:w-4xl xl:w-7xl mx-auto rounded-3xl bg-white text-center py-8">
+      <div className="space-y-3 w-xs md:w-3xl lg:w-4xl xl:w-7xl mx-auto rounded-3xl bg-white text-center py-8">
         <h1 className="text-3xl font-extrabold">Profile Details</h1>
         <p className="w-full">{description}</p>
       </div>
       <div className="w-full">
-        <div className="card p-8 w-full card-side bg-base-100 shadow-sm">
+        <div className="card flex flex-col md:flex-row p-8 w-full card-side bg-base-100 shadow-sm">
           <figure className="p-6">
             <img className="w-64 rounded-3xl" src={image} alt="Movie" />
           </figure>
