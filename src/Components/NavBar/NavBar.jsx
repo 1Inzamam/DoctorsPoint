@@ -1,21 +1,59 @@
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router-dom";
 
 const NavBar = ({ allDoctors }) => {
-  const logo = allDoctors ? allDoctors.mainLogo : "https://i.ibb.co.com/wNtxmtxd/medical.png";
+  const logo = allDoctors
+    ? allDoctors.mainLogo
+    : "https://i.ibb.co.com/wNtxmtxd/medical.png";
 
   const links = (
     <>
       <li>
-        <Link to={"/"}>Home</Link>
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? "text-green-500 font-bold hover:bg-transparent focus:outline-none focus:bg-transparent active:bg-transparent"
+              : "text-black hover:bg-transparent focus:outline-none focus:bg-transparent active:bg-transparent"
+          }
+          to={"/"}
+        >
+          Home
+        </NavLink>
       </li>
       <li>
-        <Link to={"bookings"}>Bookings</Link>
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? "text-green-500 font-bold hover:bg-transparent focus:outline-none focus:bg-transparent active:bg-transparent"
+              : "text-black hover:bg-transparent focus:outline-none focus:bg-transparent active:bg-transparent"
+          }
+          to={"bookings"}
+        >
+          Bookings
+        </NavLink>
       </li>
       <li>
-        <Link to={"blogs"}>Blogs</Link>
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? "text-green-500 font-bold hover:bg-transparent focus:outline-none focus:bg-transparent active:bg-transparent"
+              : "text-black hover:bg-transparent focus:outline-none focus:bg-transparent active:bg-transparent"
+          }
+          to={"blogs"}
+        >
+          Blogs
+        </NavLink>
       </li>
       <li>
-        <Link to={"contacts"}>Contact Us</Link>
+        <NavLink
+          className={({ isActive }) =>
+            isActive
+              ? "text-green-500 font-bold hover:bg-transparent focus:outline-none focus:bg-transparent active:bg-transparent"
+              : "text-black hover:bg-transparent focus:outline-none focus:bg-transparent active:bg-transparent"
+          }
+          to={"contacts"}
+        >
+          Contact Us
+        </NavLink>
       </li>
     </>
   );
