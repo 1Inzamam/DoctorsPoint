@@ -5,15 +5,17 @@ const Banner = ({ allDoctorsData }) => {
   const bannerImage = allDoctorsData.bannerImage;
 
   return (
-    <div className="p-0.75 bg-linear-to-b from-base-200 to-gray-100 rounded-3xl">
-      <div className="max-w-600 bg-linear-to-b from-gray-200 to-base-200 py-16 px-40 rounded-3xl flex flex-col items-center space-y-4">
-        <h1 className="text-4xl font-bold text-center mt-10">
+    <div className="w-full md:w-3xl lg:w-4xl xl:w-7xl p-0.75 bg-linear-to-b from-base-200 to-gray-100 rounded-3xl">
+      <div className="max-w-600 bg-linear-to-b from-gray-200 to-base-200 py-16 md:px-40 rounded-3xl flex flex-col items-center space-y-4">
+        <div className="space-y-4 p-6">
+          <h1 className="text-4xl font-bold text-center mt-10">
           Your Health, Our Priority
         </h1>
-        <p className="text-center w-[50%]">
+        <p className="text-center w-full">
           Book appointments with trusted doctors, explore medical specialties,
           and manage your healthcare seamlessly — all in one place.
         </p>
+        </div>
         <div
           className="flex flex-col items-center md:flex-row justify-center gap-6
        mt-6"
@@ -24,11 +26,11 @@ const Banner = ({ allDoctorsData }) => {
             placeholder="Search for doctors, specialties, or services..."
           />
 
-          <button className="btn w-32 md:w-44.5 hover:bg-green-700 bg-green-600 text-white text-base md:text-lg rounded-4xl p-2 mt-4">
+          <button className="btn w-32 md:w-44.5 hover:bg-green-700 bg-green-600 text-white text-base md:text-lg rounded-4xl py-6 px-2 mt-4">
             Search
           </button>
         </div>
-        <div>
+        <div className="">
           <BannerImageRender bannerImage={bannerImage}></BannerImageRender>
         </div>
       </div>
