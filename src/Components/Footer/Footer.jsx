@@ -1,5 +1,8 @@
 import { Link, NavLink } from "react-router-dom";
-
+import facebookIcon from "../../assets/images/icons/facebook.png"
+import linkedInIcon from "../../assets/images/icons/linkedin.png"
+import twitterIcon from "../../assets/images/icons/twitter.png"
+import youTubeIcon from "../../assets/images/icons/youtube.png"
 const Footer = ({ allDoctors }) => {
   const { mainLogo } = allDoctors;
 
@@ -71,22 +74,22 @@ const Footer = ({ allDoctors }) => {
           target="_blank"
         >
           <button className="w-8">
-            <img src="/src/assets/images/icons/linkedin.png" alt="" />
+            <img src={linkedInIcon} alt="" />
           </button>
         </a>
         <a href="https://www.facebook.com/inzamam.khan.718" target="_blank">
           <button className="w-8">
-            <img src="/src/assets/images/icons/facebook.png" alt="" />
+            <img src={facebookIcon} alt="" />
           </button>
         </a>
         <a href="https://www.twitter.com" target="_blank">
           <button className="w-8">
-            <img src="/src/assets/images/icons/twitter.png" alt="" />
+            <img src={twitterIcon} alt="" />
           </button>
         </a>
         <a href="https://www.youtube.com" target="_blank">
           <button className="w-8">
-            <img src="/src/assets/images/icons/youtube.png" alt="" />
+            <img src={youTubeIcon} alt="" />
           </button>
         </a>
       </aside>
