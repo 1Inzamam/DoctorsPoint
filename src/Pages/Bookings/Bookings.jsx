@@ -42,16 +42,16 @@ const cancelHandler = (id) => {
           </div>
         ) : (
           <div className="max-w-7xl mx-auto  p-6 rounded-3xl space-y-6">
-            <div className="text-center ">
-              <h1>Booked Appointments</h1>
-              <h3 className="">
+            <div className="text-center space-y-4 mb-8">
+              <h1 className="text-4xl font-extrabold">Booked Appointments</h1>
+              <h3 className="text-base font-normal">
                 Here you can view all your scheduled appointments with our
                 doctors. Check the date, time, and details of each booking, and
                 stay updated on your upcoming visits. Manage your appointments
                 easily and ensure you never miss a consultation.
               </h3>
             </div>
-            <div className="w-full space-y-6">
+            <div className="w-full space-y-6 mb-28">
               {appoint.map((data) => (
                 <BookedAppointment key={data.id} data={data} onCancel={cancelHandler}></BookedAppointment>
               ))}
