@@ -50,7 +50,7 @@ const Bookings = () => {
         }}
       >
         <p style={{ margin: 0, fontWeight: '700' }}>
-          {`${label} : $${payload[0].value}`}
+          {`${label} : Tk ${payload[0].value}`}
         </p>
         <p style={{ margin: 0 }}>Consultation fee of {label}</p>
       </div>
