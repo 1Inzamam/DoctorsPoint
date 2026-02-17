@@ -26,9 +26,9 @@ const Footer = ({ allDoctors }) => {
         <h1>Doctors Point</h1>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">{links}</ul>
+        <ul className="menu menu-horizontal text-[18px] space-x-[48px] font-medium px-1">{links}</ul>
       </div>
-
+<div className="border-t-2 border-gray-200 w-1/2"></div>
       <aside className="flex items-center gap-4 text-2xl">
         <a
           href="https://www.linkedin.com/in/md-inzamam-ul-khan-77068520b/"
