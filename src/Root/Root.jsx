@@ -28,7 +28,7 @@ const Root = () => {
       <NavBar allDoctors={allDoctors}></NavBar>
       {loading && <Loader />}
       <Outlet></Outlet>
-      <Footer></Footer>
+      <Footer allDoctors={allDoctors}></Footer>
       <ToastContainer />
     </div>
   );
