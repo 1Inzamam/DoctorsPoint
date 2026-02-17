@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useLoaderData } from "react-router";
-import { getStoredAppointments } from "../../Utility/addAppointment";
+import { getStoredAppointments, updateAppointmentsUtil } from "../../Utility/addAppointment";
 import BookedAppointment from "../../Components/BookedAppointment/BookedAppointment";
 
 const Bookings = () => {
@@ -16,9 +16,17 @@ const Bookings = () => {
     );
     setTimeout(() => setAppointList(appointedList));
   }, [doctors]);
-  console.log(appoint);
+
+const cancelHandler = (id) => {
+   const updateAppointments = appoint.filter((doctor) => doctor.id !== id);
+   setAppointList(updateAppointments);
+   const updatedIds = updateAppointments.map((doctor) => String(doctor.id));
+   updateAppointmentsUtil(updatedIds);
+  };
+  
+
   return (
-    <div className="min-h-screen flex flex-col max-w-7xl mx-auto my-12">
+    <div className=" flex flex-col max-w-7xl mx-auto my-12">
       <div>
         
 
@@ -34,18 +42,18 @@ const Bookings = () => {
           </div>
         ) : (
           <div className="max-w-7xl mx-auto  p-6 rounded-3xl space-y-6">
-            <div className="text-center lg:w-252.25">
+            <div className="text-center ">
               <h1>Booked Appointments</h1>
-              <h3>
+              <h3 className="">
                 Here you can view all your scheduled appointments with our
                 doctors. Check the date, time, and details of each booking, and
                 stay updated on your upcoming visits. Manage your appointments
                 easily and ensure you never miss a consultation.
               </h3>
             </div>
-            <div className="space-y-6">
+            <div className="w-full space-y-6">
               {appoint.map((data) => (
-                <BookedAppointment key={data.id} data={data}></BookedAppointment>
+                <BookedAppointment key={data.id} data={data} onCancel={cancelHandler}></BookedAppointment>
               ))}
             </div>
           </div>

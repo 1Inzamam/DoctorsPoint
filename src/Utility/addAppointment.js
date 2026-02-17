@@ -23,4 +23,11 @@ const addAppointment = (id) => {
   }
 };
 
-export {getStoredAppointments, addAppointment};
+const updateAppointmentsUtil = (update) => {
+    localStorage.setItem("appointments", JSON.stringify(update));
+    toast.error("Appointment cancelled successfully!");
+}
+
+
+
+export {getStoredAppointments, addAppointment, updateAppointmentsUtil};
