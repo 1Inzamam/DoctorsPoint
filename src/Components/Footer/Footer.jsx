@@ -38,7 +38,7 @@ const Footer = ({ allDoctors }) => {
             <img src="/src/assets/images/icons/linkedin.png" alt="" />
           </button>
         </a>
-        <a href="https://www.facebook.com" target="_blank">
+        <a href="https://www.facebook.com/inzamam.khan.718" target="_blank">
           <button className="w-8">
             <img src="/src/assets/images/icons/facebook.png" alt="" />
           </button>
