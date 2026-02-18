@@ -13,7 +13,7 @@ const SingleDoctor = ({ doctor }) => {
   } = doctor;
    const isAvailable = availability.includes(today);
   return (
-    <div className="card w-64- bg-base-100">
+    <div className="card w-64 md:w-full bg-base-100">
       <figure>
         <img className="w-[full] p-6 object-cover" src={image} alt="Shoes" />
       </figure>
