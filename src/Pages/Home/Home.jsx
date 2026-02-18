@@ -35,7 +35,7 @@ const Home = () => {
       <AllDoctors
         allDoctorsData={{ ...allDoctorsData, doctors: filteredDoctors }}
       ></AllDoctors>
-      <AnimatedCounters></AnimatedCounters>
+      <AnimatedCounters doctors={doctors}></AnimatedCounters>
     </div>
   );
 };
