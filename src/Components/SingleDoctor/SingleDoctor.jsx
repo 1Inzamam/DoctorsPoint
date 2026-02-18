@@ -1,4 +1,3 @@
-import React from "react";
 import { PiTrademarkRegisteredFill } from "react-icons/pi";
 import { Link } from "react-router";
 const SingleDoctor = ({ doctor }) => {

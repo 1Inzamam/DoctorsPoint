@@ -32,7 +32,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "bookings",
-        loader:fetchDoctorsData,
+        loader: fetchDoctorsData,
         Component: Bookings,
       },
       {
@@ -49,9 +49,5 @@ export const router = createBrowserRouter([
         Component: DoctorDetails,
       },
     ],
-  },
-  {
-    path: "*",
-    element: <ErrorPage></ErrorPage>,
   },
 ]);

@@ -1,8 +1,8 @@
-import { Link, NavLink } from "react-router-dom";
-import facebookIcon from "../../assets/images/icons/facebook.png"
-import linkedInIcon from "../../assets/images/icons/linkedin.png"
-import twitterIcon from "../../assets/images/icons/twitter.png"
-import youTubeIcon from "../../assets/images/icons/youtube.png"
+import { NavLink } from "react-router-dom";
+import facebookIcon from "../../assets/images/icons/facebook.png";
+import linkedInIcon from "../../assets/images/icons/linkedin.png";
+import twitterIcon from "../../assets/images/icons/twitter.png";
+import youTubeIcon from "../../assets/images/icons/youtube.png";
 const Footer = ({ allDoctors }) => {
   const { mainLogo } = allDoctors;
 
