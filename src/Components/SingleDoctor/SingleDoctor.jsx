@@ -32,7 +32,7 @@ const SingleDoctor = ({ doctor }) => {
         </div>
         <h2 className="card-title">{name}</h2>
         <p>{education}</p>
-        <div className="border-t-2 border-dashed"></div>
+        <div className="border-t-2 border-dashed border-gray-200"></div>
         <div className="flex items-center gap-3">
           <PiTrademarkRegisteredFill /> {registryNumber}
         </div>
