@@ -85,8 +85,9 @@ const NavBar = ({ allDoctors }) => {
             {links}
           </ul>
         </div>
-        <a className="text-xl">
+        <a className="flex items-center gap-3">
           <img src={logo} alt="" />
+          <h1 className="text-3xl font-extrabold">Doctors Point</h1>
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
