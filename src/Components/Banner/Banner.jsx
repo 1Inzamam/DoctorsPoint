@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import BannerImageRender from "./BannerImageRender";
 
 const Banner = ({
@@ -8,6 +8,7 @@ const Banner = ({
   handleSearch,
   setFilteredDoctors,
 }) => {
+  const [inputFocused, setInputFocused] = useState(false);
   const bannerImage = allDoctorsData.bannerImage;
 
   return (
@@ -36,6 +37,8 @@ const Banner = ({
                 setFilteredDoctors(allDoctorsData.doctors);
               }
             }}
+            onFocus={() => setInputFocused(true)}
+            onBlur={() => setInputFocused(false)}
             onKeyDown={(e) => e.key === "Enter" && handleSearch()}
             className="text-center md:text-left textarea-sm md:text-lg w-72 md:w-96 lg:w-150 bg-base-200 border border-gray-300 rounded-4xl p-2 mt-4"
             placeholder="Search for doctors, specialties, or services..."
@@ -48,9 +51,11 @@ const Banner = ({
             Search
           </button>
         </div>
-        <div className="">
-          <BannerImageRender bannerImage={bannerImage}></BannerImageRender>
-        </div>
+        {!inputFocused && (
+          <div className="">
+            <BannerImageRender bannerImage={bannerImage}></BannerImageRender>
+          </div>
+        )}
       </div>
     </div>
   );
