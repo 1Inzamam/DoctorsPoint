@@ -51,11 +51,13 @@ const Banner = ({
             Search
           </button>
         </div>
-        {!inputFocused && (
-          <div className="">
-            <BannerImageRender bannerImage={bannerImage}></BannerImageRender>
-          </div>
-        )}
+        <div className={
+          `transition-all duration-500 ease-in-out ${
+            inputFocused ? "opacity-0 max-h-0" : "opacity-100 h-auto"
+          }`
+        }>
+          <BannerImageRender bannerImage={bannerImage}></BannerImageRender>
+        </div>
       </div>
     </div>
   );
